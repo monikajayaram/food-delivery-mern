@@ -10,8 +10,8 @@
   "scripts": {
     "start": "node server/index.js",
     "backend": "nodemon server/index.js",
-    "frontend": "cd web-app && npm run build",
-    "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+    "frontend": "cd client && npm run build",
+    "dev": "npm run frontend && npm run backend"
   },
   "author": "John ahn",
   "license": "ISC",
